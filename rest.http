@@ -1,0 +1,40 @@
+####To use this file add extension rest-client to your system
+
+
+
+GET http://localhost:3000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MzIxMjg3NjYsImV4cCI6MTYzMjEzMjM2NiwiYXVkIjoiNjE0NzZkYTdjYmZjMDEzYzM3YWRlZWZmIiwiaXNzIjoiYWJjLmNvbSJ9.a5L5xQOA2J08jmnZNEQEpf00rk9Nztbk6aqVvw6khI8
+
+###
+
+
+
+POST  http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email":"xyz@gmail.com",
+    "password":"1234567"
+}
+
+###
+
+POST  http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "username":"xyz1234",
+    "name":"xyz",
+    "email":"xyz@gmail.com",
+    "password":"1234567"
+}
+###
+POST http://localhost:3000/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MzIxMzEyMTUsImV4cCI6MTY2MzY4ODgxNSwiYXVkIjoiNjE0NzZkYTdjYmZjMDEzYzM3YWRlZWZmIiwiaXNzIjoiYWJjLmNvbSJ9.KjD6HQBPhio3z53ptFwWDaysPK74yDjVI9DkMiFK7SU"
+}
+
+####
+DELETE  http://localhost:3000/logout
